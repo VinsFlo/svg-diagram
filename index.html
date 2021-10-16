@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Диаграмма</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<h1 class="header">Интерактивная SVG-диаграмма</h1>
+	<h2 class="subheader">Сделана по статье <a
+			href="https://htmlacademy.ru/blog/boost/tutorial/svg-chart?utm_source=tg&utm_medium=social&utm_campaign=blog911_15102021">html
+			academy</a> </h2>
+	<div class="canvas">
+		<!-- Добавим разметку диаграммы (инлайн) -->
+		<!-- С помощью viewBox можно задать область отрисовки, которая будет растягиваться и сжиматься в зависимости от
+		размеров. В нашем случае первые два нуля в значении — это координаты верхнего левого угла области (начало отсчёта
+		системы координат), а следующие два числа — ширина и высота соответственно. -->
+		<svg class="chart" width="500" height="500" viewBox="0 0 50 50">
+			<circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+			<circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+			<circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+			<circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+			<circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+			<circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+			<circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+		</svg>
+
+		<div class="legend">
+			<p class="title">Что мешает во время работы дома?</p>
+			<ul class="caption-list">
+				<li class="caption-item">еда</li>
+				<li class="caption-item">соседи</li>
+				<li class="caption-item">отсутствие рабочего места</li>
+				<li class="caption-item">мало двигаюсь</li>
+				<li class="caption-item">отсутствие чёткого графика работы</li>
+				<li class="caption-item">неудобная коммуникация с коллегами</li>
+				<li class="caption-item">прокрастинация</li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
